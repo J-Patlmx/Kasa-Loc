@@ -1,0 +1,30 @@
+body {
+  background: whitesmoke;
+}
+h1 {
+  color: crimson;
+}
+
+.locationCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  #firstLine {
+    display: flex;
+    flex: 3;
+    gap: 16px;
+  }
+  #secondLine {
+    display: flex;
+    flex: 3;
+    gap: 16px 16px;
+  }
+  .card {
+    width: 300px;
+    flex: 2;
+    border-radius: 32px;
+    border: 2px solid lightcoral;
+    padding: 16px;
+    background-color: lightgray;
+  }
+}
