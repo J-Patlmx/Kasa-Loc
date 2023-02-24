@@ -4,6 +4,7 @@ body {
 
 h1 {
   color: crimson;
+  text-align: center;
 }
 
 .locationCards {
@@ -15,17 +16,26 @@ h1 {
   display: flex;
   flex: 3;
   gap: 16px;
+  margin: 16px;
 }
 .locationCards #secondLine {
   display: flex;
   flex: 3;
-  gap: 16px 16px;
+  gap: 16px;
+  margin: 16px;
 }
 .locationCards .card {
-  width: 300px;
+  width: 250px;
   flex: 2;
   border-radius: 32px;
   border: 2px solid lightcoral;
   padding: 16px;
   background-color: lightgray;
+}
+.locationCards .card img {
+  width: 100%;
+  border-radius: 32px 32px 0 0;
+}
+.locationCards .card p {
+  word-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */
