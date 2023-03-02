@@ -1,10 +1,58 @@
 body {
   background: whitesmoke;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color: crimson;
-  text-align: center;
+header {
+  border: 2px solid navy;
+  display: flex;
+  flex-wrap: nowrap;
+}
+header .logoKasa {
+  display: flex;
+  border: 1px solid green;
+}
+header nav {
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  flex: 4;
+  margin: 16px;
+}
+header nav .subMenu {
+  border: 1px solid red;
+  flex: 2;
+}
+header nav .subMenu:link {
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  border: 1px solid blue;
+}
+.hero h1 {
+  color: black;
+  position: absolute;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid navy;
+  z-index: 1;
+}
+.hero img {
+  border-radius: 32px;
+  margin: 16px;
+  width: 1240px;
+  height: 223px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left center;
+     object-position: left center;
 }
 
 .locationCards {
@@ -25,7 +73,8 @@ h1 {
   margin: 16px;
 }
 .locationCards .card {
-  width: 250px;
+  width: 340px;
+  height: 340px;
   flex: 2;
   border-radius: 32px;
   border: 2px solid lightcoral;
@@ -33,8 +82,13 @@ h1 {
   background-color: lightgray;
 }
 .locationCards .card img {
-  width: 100%;
+  width: 99%;
+  height: 80%;
   border-radius: 32px 32px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .locationCards .card p {
   word-wrap: wrap;
